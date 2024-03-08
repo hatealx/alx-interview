@@ -4,7 +4,10 @@
 
 def pascal_triangle(n):
     """function returning a pascal triangle array based on taken input"""
-
+    if n <= 0:
+        return (0)
+    if n == 1:
+        return ([1])
     pascal_triangle_array = [[1], [1, 1]]
     base = [1, 1]
     for i in range(2, n):
